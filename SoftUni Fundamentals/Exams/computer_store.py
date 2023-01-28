@@ -1,5 +1,4 @@
 total_price = 0
-taxes = 0
 
 special = False
 regular = True
@@ -28,17 +27,17 @@ special_price = (total_price + taxes) * 0.90
 
 if total_price != 0:
     if special:
-        print(f'''"Congratulations you've just bought a new computer!
-        Price without taxes: {total_price:.2f}$
-        Taxes: {taxes:.2f}$
-        -----------
-        Total price: {special_price:.2f}$"''')
+        print(f"Congratulations you've just bought a new computer!")
+        print(f"Price without taxes: {total_price:.2f}$")
+        print(f"Taxes: {taxes:.2f}$")
+        print("-----------")
+        print(f"Total price: {special_price:.2f}$")
     else:
-        print(f'''"Congratulations you've just bought a new computer!
-            Price without taxes: {total_price:.2f}$
-            Taxes: {taxes:.2f}$
-            -----------
-            Total price: {total_price + taxes:.2f}$"''')
+        print(f"Congratulations you've just bought a new computer!")
+        print(f"Price without taxes: {total_price:.2f}$")
+        print(f"Taxes: {taxes:.2f}$")
+        print("-----------")
+        print(f"Total price: {total_price + taxes:.2f}$")
 else:
     print("Invalid order!")
 

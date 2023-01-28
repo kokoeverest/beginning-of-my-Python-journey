@@ -4,7 +4,7 @@ water_amount = int(input())
 total_fire = 0
 total_effort = 0
 print("Cells:")
-while water_amount >= 0:
+while water_amount > 0:
     current_fire = []
     for fire in values:
         current_fire = fire.split(" ")
