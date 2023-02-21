@@ -1,9 +1,16 @@
-def perfect_number_check(par1):
+def perfect_number_check(num):
+    result = num + 1
+    for i in range(1, num + 1):
+        if num // i != 1 and num // i != num and num % i == 0:
+            result += i
 
-    pass
+    if result / 2 == num:
+        return "We have a perfect number!"
+    else:
+        return "It's not so perfect."
 
 
-number = input()
+number = int(input())
 
 print(perfect_number_check(number))
 
